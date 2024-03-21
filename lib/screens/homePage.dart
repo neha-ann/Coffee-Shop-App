@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                   MenuTile(
                     image: 'assets/images/cappucino.png',
                     textName: "Cappucino",
-                    textPrice: "\$15",
+                    textPrice: "\$10",
                   ),
                   MenuTile(
                     image: 'assets/images/expresso.png',
@@ -38,12 +38,12 @@ class HomePage extends StatelessWidget {
                   MenuTile(
                     image: 'assets/images/coldCoffee.png',
                     textName: 'Cold Coffee',
-                    textPrice: "\$15",
+                    textPrice: "\$12",
                   ),
                   MenuTile(
                     image: 'assets/images/Lattee.png',
                     textName: 'Latte',
-                    textPrice: "\$15",
+                    textPrice: "\$8",
                   ),
                 ],
               ),
@@ -52,12 +52,12 @@ class HomePage extends StatelessWidget {
                   MenuTile(
                     image: 'assets/images/blackCoffee.png',
                     textName: 'Black Coffee',
-                    textPrice: "\$15",
+                    textPrice: "\$5",
                   ),
                   MenuTile(
                     image: 'assets/images/turkishCoffee.png',
                     textName: 'Turkish coffee',
-                    textPrice: "\$15",
+                    textPrice: "\$10",
                   ),
                 ],
               ),
@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
                   MenuTile(
                     image: 'assets/images/mocha.png',
                     textName: 'Mocha',
-                    textPrice: "\$15",
+                    textPrice: "\$20",
                   ),
                 ],
               ),

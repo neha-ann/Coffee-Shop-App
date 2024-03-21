@@ -90,6 +90,10 @@ flutter:
       fonts:
         - asset: assets/font/YujiBoku-Regular.ttf
 
+    - family: font_2
+      fonts:
+        - asset: assets/font/Asul-Regular.ttf
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

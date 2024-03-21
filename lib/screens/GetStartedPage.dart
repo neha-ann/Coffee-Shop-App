@@ -53,7 +53,7 @@ class GetStartedScreen extends StatelessWidget {
                 onTap: () async {
                   await Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => const HomePage()),
                   );
                 },
                 child: Container(
