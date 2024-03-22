@@ -2,6 +2,7 @@ import 'package:coffee_day/widgets/tiles.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
+  // ignore: use_key_in_widget_constructors
   const HomePage({Key? key});
 
   @override

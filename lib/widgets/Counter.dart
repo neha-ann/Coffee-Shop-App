@@ -2,16 +2,17 @@
 
 import 'package:flutter/material.dart';
 
-class CountControllerExample extends StatefulWidget {
-  const CountControllerExample({super.key});
+class Counter extends StatefulWidget {
+  final void Function(int) onCounterChanged;
+  const Counter({super.key, required this.onCounterChanged});
 
   @override
-  _CountControllerExampleState createState() => _CountControllerExampleState();
+  _CounterState createState() => _CounterState();
 }
 
-class _CountControllerExampleState extends State<CountControllerExample> {
+class _CounterState extends State<Counter> {
   final TextEditingController _countController = TextEditingController();
-  int count = 0;
+  int count = 1;
 
   @override
   void dispose() {
@@ -32,6 +33,7 @@ class _CountControllerExampleState extends State<CountControllerExample> {
             setState(() {
               if (count > 0) {
                 count--;
+                widget.onCounterChanged(count);
                 _countController.text = count.toString();
               }
             });
@@ -56,6 +58,7 @@ class _CountControllerExampleState extends State<CountControllerExample> {
           onPressed: () {
             setState(() {
               count++;
+              widget.onCounterChanged(count);
               _countController.text = count.toString();
             });
           },

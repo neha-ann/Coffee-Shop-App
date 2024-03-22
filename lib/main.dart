@@ -1,6 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors
 
-import 'package:coffee_day/widgets/aaa.dart';
+import 'package:coffee_day/screens/GetStartedPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +10,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SelectionScreen(),
+      home: GetStartedScreen(),
     );
   }
 }
